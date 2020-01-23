@@ -12,4 +12,4 @@ npm install
 npm run start
 ```
 
-Or download dist and open.
+Or download dist and open index.html.
