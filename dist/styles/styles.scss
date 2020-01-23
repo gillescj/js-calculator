@@ -14,11 +14,11 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(5, 5rem);
-    grid-template-rows: minmax(7rem, auto) repeat(5,5rem);
+    grid-template-columns: repeat(5, 3.5rem);
+    grid-template-rows: minmax(5rem, auto) repeat(5,3.5rem);
     button{
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.2rem;
         border: 1px solid rgba(0,0,0,0.60);
         outline: none;
         background-color: rgba(0,0,0,0.70);
@@ -58,4 +58,15 @@ body {
         color: rgb(255,255,255);
         font-size: 2.5rem;
     }
+}
+
+@media only screen and (min-width: 30rem){
+    .calculator-grid {
+        grid-template-columns: repeat(5, 5rem);
+        grid-template-rows: minmax(7rem, auto) repeat(5,5rem);
+        button{
+            font-size: 2rem;
+        }
+    }
+    
 }
