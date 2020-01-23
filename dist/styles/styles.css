@@ -1,0 +1,85 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#0084ff), to(rgba(26, 191, 206, 0.829)));
+  background: linear-gradient(to right, #0084ff, rgba(26, 191, 206, 0.829));
+}
+
+.calculator-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  -ms-grid-columns: (5rem)[5];
+      grid-template-columns: repeat(5, 5rem);
+  -ms-grid-rows: minmax(7rem, auto) (5rem)[5];
+      grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+
+.calculator-grid button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+}
+
+.calculator-grid button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.calculator-grid .delete, .calculator-grid .all-clear {
+  background-color: rgba(228, 13, 13, 0.65);
+}
+
+.calculator-grid .equals {
+  background-color: rgba(53, 79, 194, 0.5);
+}
+
+.calculator-grid .large {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 0.5rem;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=styles.css.map */
