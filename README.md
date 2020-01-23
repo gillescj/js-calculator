@@ -6,8 +6,10 @@ Calculator using JavaScript and Sass.
 
 ### Installing and Running
 
-Within root
+Within root:
 ```
 npm install
 npm run start
 ```
+
+Or open index.html in dist.
